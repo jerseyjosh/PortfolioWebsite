@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Josh</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <a href="index.html" class="navbar-brand">&ltjg&gt</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutme">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <section id="title">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="assets/all_the_data.svg" alt="title image" class="title-image">
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="title">Solving problems with data.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="aboutme">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="aboutme-header">Hi, I'm <span class="name">Josh</span></h1>
+                    <p>I'm a Mathematics graduate currently studying MSc Data Analytics at QMUL. <br>
+                        I'm a hopeful data analyst and machine learning engineer and hope to pursue these passions in the future. </p>
+                    <p>I'm constantly on the lookout to expand my skillset, most recently by exploring web development, and using this knowledge to build this site to showcase my work.</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="assets/josh.jpg" alt="picture of josh" class="aboutme-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container-fluid">
+            <h1>Projects</h1><h2>(Click to see notebook)</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-container">
+                        <img src="#" alt="">
+                        <a href="ClusteringMethods.html" class="project-link"><h2>Clustering Methods</h2></a>
+                        <p>Exploring k-means clustering, Gaussian mixture methods and spectral clustering for use in classification problems and image compression.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-container">
+                        <img src="#" alt="">
+                        <a href="SpotifyDataset.html" class="project-link"><h2>Spotify Dataset Classification</h2></a>
+                        <p>Implementing binomial logistic regression with ridge regularisation (from scratch) for classification on the <a href="https://www.kaggle.com/datasets/bricevergnou/spotify-recommendation">Spotify Dataset</a>. A bit more maths-heavy.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-container">
+                        <img src="#" alt="">
+                        <a href="SpokenDigitClassification.html" class="project-link"><h2>Deep Learning Classification</h2></a>
+                        <p>Implementing a neural network (from scratch) for classifying spoken digits from the <a href="https://www.kaggle.com/datasets/alanchn31/free-spoken-digits">AudioMNIST</a> dataset.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="project-container">
+                        <img src="#" alt="">
+                        <a href="DimensionalityReduction.html" class="project-link"><h2>Dimensionality Reduction</h2></a>
+                        <p>Singular value decomposition and principal component analysis for use in image compression and in increasing efficacy of clustering algorithms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container-fluid">
+            <h1>Contact Me</h1>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/mdobljpn" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input
+                        type="text"
+                        id="name"
+                        name="sender-name"
+                        placeholder="Enter Your Name"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input
+                        type="email"
+                        id="email"
+                        name="sender-email"
+                        placeholder="Enter Your Email"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Enter Your Message"
+                        name="message"
+                        class="input-field"
+                        required
+                        ></textarea>
+                    </div>
+                    <input
+                        type="submit"
+                        value="Submit"
+                        id="submit-btn"
+                        class="submit-btn"
+                    />
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+          <div class="footer-links container-fluid">
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin fa-2xl"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-github fa-2xl"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
