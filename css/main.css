@@ -12,15 +12,15 @@
 
 /* General */
 
-a {
-  color: inherit;
-  font-weight: bold;
-}
-
 body {
   font-family: 'Poppins' sans-serif;
   color: var(--col-dark);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
 }
 
 h1 {
@@ -31,14 +31,14 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .container-fluid {
