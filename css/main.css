@@ -26,7 +26,13 @@ body {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 h2 {
